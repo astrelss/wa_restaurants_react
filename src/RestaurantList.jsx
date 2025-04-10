@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import RestaurantCard from './RestaurantCard';
+import './RestaurantList.css'; // Import your CSS file
 
 function RestaurantList() {
 
@@ -25,12 +26,21 @@ function RestaurantList() {
         address: 'Kansankatu 3'
       }
   ]) 
+
+  
     
   return (
-    <div>
-      {restaurants.map((restaurant) => (
-        <RestaurantCard key={restaurant.id} restaurant={restaurant} />
-      ))}
+    <div className="restaurant-list-container">
+      <div className="side-panel">
+        <h3>Actions</h3>
+        <button onClick={() => {}}>Add Rating</button>
+        {/* Add more action buttons here */}
+      </div>
+      <div className="restaurant-list">
+        {restaurants.map((restaurant) => (
+          <RestaurantCard key={restaurant.id} restaurant={restaurant} />
+        ))}
+      </div>
     </div>
   );
 }

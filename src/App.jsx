@@ -16,7 +16,7 @@ function App() {
               <Link to="/">Ratings</Link>
             </li>
             <li>
-              <Link to="/add-restaurant">Add Restaurant</Link>
+              <Link to="/add-restaurant">Restaurants</Link>
             </li>
           </ul>
         </nav>
