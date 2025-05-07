@@ -22,17 +22,15 @@ function App() {
               <Link to="/">Ratings</Link>
             </li>
             <li>
-              <Link to="/add-restaurant">Restaurants</Link>
+              <Link to="/restaurants">Restaurants</Link>
             </li>
-            <li>
-              <Link to="/login">Login</Link>
-            </li>
+            
           </ul>
         </nav>
 
-        {/* Define your routes */}
+       
         <Routes>
-          <Route path="/login" element={<Login />} />
+          
           <Route path="/:id" element={<RatingsByRestaurant />} />
           <Route path="/" element={<RestaurantList />} />
           
