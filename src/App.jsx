@@ -1,7 +1,7 @@
 import RestaurantList from "./RestaurantList"
 import RatingsByRestaurant from "./RatingsByRestaurant";
 import { BrowserRouter as Router, Routes, Route, Link } from 'react-router-dom';
-import Login from "./Login";
+
 import './App.css';
 import { useState } from "react";
 
@@ -24,6 +24,7 @@ function App() {
             <li>
               <Link to="/restaurants">Restaurants</Link>
             </li>
+           
             
           </ul>
         </nav>
